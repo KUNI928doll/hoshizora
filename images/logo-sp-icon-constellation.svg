@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="140" viewBox="0 0 120 140">
+  <defs>
+    <style>
+      .name {
+        font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        fill: #1F2937;
+        letter-spacing: 0.08em;
+        text-anchor: middle;
+      }
+      .sub {
+        font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        fill: #1F2937;
+        letter-spacing: 0.12em;
+        text-anchor: middle;
+      }
+      .star {
+        fill: #F5C451;
+      }
+      .star-small {
+        fill: #F5C451;
+        opacity: 0.6;
+      }
+      .line {
+        stroke: #F5C451;
+        stroke-width: 1;
+        opacity: 0.5;
+        fill: none;
+      }
+    </style>
+  </defs>
+
+  <!-- 背景の星（星座っぽく散りばめ） -->
+  <circle cx="22" cy="24" r="1.6" class="star-small"></circle>
+  <circle cx="36" cy="18" r="1.2" class="star-small"></circle>
+  <circle cx="96" cy="28" r="1.4" class="star-small"></circle>
+  <circle cx="88" cy="46" r="1.2" class="star-small"></circle>
+  <circle cx="24" cy="52" r="1.4" class="star-small"></circle>
+
+  <!-- 星座の線（うっすら） -->
+  <path d="M22 24 L36 18 L52 26" class="line"></path>
+  <path d="M88 46 L96 28" class="line"></path>
+
+  <!-- メインの星（主役） -->
+  <polygon class="star" points="
+      60,18
+      65,32
+      80,32
+      68,41
+      73,56
+      60,47
+      47,56
+      52,41
+      40,32
+      55,32
+    "></polygon>
+
+  <!-- 園名（縦並び） -->
+  <text x="60" y="92" class="name">ほしぞら</text>
+  <text x="60" y="116" class="sub">保育園</text>
+</svg>

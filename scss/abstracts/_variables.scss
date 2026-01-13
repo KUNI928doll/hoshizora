@@ -1,0 +1,28 @@
+$color-bg: #fff9f0; // Morning Ivory
+$color-text: #3a4a6b; // Soft Sky Navy
+$color-accent: #f7c948; // Star Yellow
+$color-sub: #e8f3ec; // Pale Mint
+$color-gray: #7a7a7a; // Soft Gray
+
+$font-sans: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+
+$line-height-body: 1.8;
+$letter-spacing-heading: 0.08em;
+
+:root {
+  /* Color palette */
+  --color-bg: #{$color-bg};
+  --color-text: #{$color-text};
+  --color-accent: #{$color-accent};
+  --color-sub: #{$color-sub};
+  --color-gray: #{$color-gray};
+
+  /* Typography */
+  --font-sans: #{$font-sans};
+
+  /* Recommended defaults */
+  --line-height-body: #{$line-height-body};
+  --letter-spacing-heading: #{$letter-spacing-heading};
+}
+
+

@@ -1,0 +1,27 @@
+:root {
+  /* Color palette */
+  --color-bg: #fff9f0;
+  --color-text: #3a4a6b;
+  --color-accent: #f7c948;
+  --color-sub: #e8f3ec;
+  --color-gray: #7a7a7a;
+  /* Typography */
+  --font-sans: Zen Maru Gothic, Noto Sans JP, sans-serif;
+  /* Recommended defaults */
+  --line-height-body: 1.8;
+  --letter-spacing-heading: 0.08em;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: var(--line-height-body);
+}
+
+/*# sourceMappingURL=style.css.map */

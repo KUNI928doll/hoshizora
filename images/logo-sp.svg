@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="72" viewBox="0 0 280 72">
+  <defs>
+    <style>
+      .name {
+        font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        fill: #1F2937;
+        letter-spacing: 0.06em;
+      }
+    </style>
+  </defs>
+
+  <!-- ロゴマーク（星） -->
+  <g transform="translate(20 18)">
+    <polygon points="18,0 22,10 33,10 24,17 28,28 18,21 8,28 12,17 3,10 14,10" fill="#F5C451"></polygon>
+  </g>
+
+  <!-- 園名 -->
+  <text x="70" y="44" class="name">
+    ほしぞら保育園
+  </text>
+</svg>

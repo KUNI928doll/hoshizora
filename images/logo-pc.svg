@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="140" viewBox="0 0 520 140">
+  <defs>
+    <style>
+      .name {
+        font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+        font-weight: 500;
+        font-size: 42px;
+        fill: #1F2937;
+        letter-spacing: 0.1em;
+      }
+      .tagline {
+        font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+        font-size: 15px;
+        fill: #6B7280;
+        letter-spacing: 0.12em;
+      }
+      .star-line {
+        stroke: #F5C451;
+        stroke-width: 1.2;
+        fill: none;
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
+
+  <!-- 園名 -->
+  <text x="260" y="70" class="name" text-anchor="middle">
+    ほしぞら保育園
+  </text>
+
+  <!-- 主役の星（ぞ の濁点イメージ） -->
+  <polygon points="278,38 281,44 288,44 282,48 285,55 278,51 271,55 274,48 268,44 275,44" fill="#F5C451"></polygon>
+
+  <!-- 星座の点 -->
+  <circle cx="160" cy="78" r="2.2" fill="#F5C451"></circle>
+  <circle cx="220" cy="72" r="1.8" fill="#F5C451"></circle>
+  <circle cx="340" cy="72" r="1.8" fill="#F5C451"></circle>
+  <circle cx="400" cy="78" r="2.2" fill="#F5C451"></circle>
+
+  <!-- 星座の線 -->
+  <path d="M160 78 L220 72 L278 50 L340 72 L400 78" class="star-line"></path>
+
+  <!-- キャッチコピー -->
+  <text x="260" y="115" class="tagline" text-anchor="middle">
+    きらりと光る、あなたの個性を育みます
+  </text>
+</svg>
