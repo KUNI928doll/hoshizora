@@ -1,16 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
     <style>
-      .bg { fill: #1F2937; }      /* 夜空 */
-      .star { fill: #F5C451; }    /* 個性の星 */
+      .bg { fill: #3A4A6B; }      /* 明るめ夜空ネイビー */
+      .star { fill: #F7C948; }   /* 個性の星 */
     </style>
   </defs>
 
   <!-- 背景（円：安定して見える） -->
-  <circle cx="32" cy="32" r="32" class="bg"></circle>
+  <circle cx="32" cy="32" r="32" class="bg"/>
 
   <!-- 星（シンプル・潰れない形） -->
-  <polygon class="star" points="
+  <polygon
+    class="star"
+    points="
       32,14
       36,26
       49,26
@@ -21,5 +23,6 @@
       26,33
       15,26
       28,26
-    "></polygon>
+    "
+  />
 </svg>

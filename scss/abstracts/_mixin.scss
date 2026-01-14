@@ -1,23 +1,26 @@
+// =========================
+// ブレークポイント定義
+// =========================
 @use "sass:map";
 
 $breakpoints: (
-  sp-small: 376px,
-  sp-large: 768px,
-  tab: 1024px,
-  mid-pc: 1200px,
-  laptop: 1440px
+  "sm": 376px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px
 );
 
-/// メディアクエリ用
-/// @example scss - 使い方
-///   .foo { @include mq(tab) { ... } }
-@mixin mq($key) {
-  @if map.has-key($breakpoints, $key) {
-    @media (min-width: map.get($breakpoints, $key)) {
+// =========================
+// メディアクエリ mixin
+// =========================
+@mixin mq($breakpoint) {
+  $size: map.get($breakpoints, $breakpoint);
+  @if $size {
+    @media screen and (min-width: $size) {
       @content;
     }
   } @else {
-    @error "Unknown breakpoint `#{$key}`. Available: #{map.keys($breakpoints)}";
+    @warn "未定義のブレークポイントです → #{$breakpoint}";
   }
 }
 

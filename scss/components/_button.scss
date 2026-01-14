@@ -1,0 +1,25 @@
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.1rem 1.6rem;
+  border-radius: 999px;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  user-select: none;
+  transition: transform 0.15s ease, opacity 0.3s;
+}
+
+.c-button--primary {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.c-button:active {
+  transform: translateY(1px);
+}
+
+

@@ -1,0 +1,20 @@
+{
+  // Live Sass Compiler を使っている場合、出力先を scss/ ではなく css/ に固定
+  // （拡張機能が無い場合は無視されます）
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "**/.sass-cache/**",
+    "**/scss/**/_*"
+  ]
+}
+
+

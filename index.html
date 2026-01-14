@@ -1,23 +1,129 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ほしぞら保育園｜きらりと光る、あなたの個性を育みます</title>
-    <meta name="description" content="子どもたち一人ひとりの個性を大切に。自然と宇宙への好奇心を育む、あたたかな保育園です。">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <meta property="og:title" content="ほしぞら保育園｜きらりと光る、あなたの個性を育みます">
-    <meta property="og:description" content="子どもたち一人ひとりの個性を大切に。自然と宇宙への好奇心を育む、あたたかな保育園です。">
-    <meta property="og:image" content="https://example.com/ogp.jpg">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ほしぞら保育園">
-    <meta name="twitter:card" content="summary_large_image">
-
-</head>
+    <head>
+        <!-- 文字コード：日本語も正しく表示される -->
+        <meta charset="UTF-8">
+        <!-- レスポンシブ対応：スマホ表示を最適化 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- タイトルと説明：SEOに効く -->
+        <title>ほしぞら保育園｜きらりと光る、あなたの個性を育みます</title>
+        <meta name="description" content="子どもたち一人ひとりの個性を大切に。自然と宇宙への好奇心を育む、あたたかな保育園です。">
+        <!-- ファビコン：ブラウザのタブやスマホのアイコン -->
+        <link rel="icon" href="./images/common/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/common/apple-touch-icon.png">
+        <!-- Google Fontsの事前接続：読み込み高速化 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Webフォント：本文や見出しに使用 -->
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <!-- CSS読み込み：リセットとメインスタイル -->
+        <link rel="stylesheet" href="./css/reset.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- JavaScript：読み込みを遅らせることでページ表示を高速化 -->
+        <script src="./js/main.js" defer></script>
+        <!-- OGP（SNSシェア時のカード表示） -->
+        <meta property="og:title" content="ほしぞら保育園｜きらりと光る、あなたの個性を育みます">
+        <meta property="og:description" content="子どもたち一人ひとりの個性を大切に。自然と宇宙への好奇心を育む、あたたかな保育園です。">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="ほしぞら保育園">
+        <meta property="og:locale" content="ja_JP">
+        <!-- ✅ 本番環境でURLと画像を差し替える -->
+        <meta property="og:url" content="https://example.com/">
+        <meta property="og:image" content="https://example.com/ogp.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <!-- Twitterカード：SNSプレビュー最適化 -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="ほしぞら保育園｜きらりと光る、あなたの個性を育みます">
+        <meta name="twitter:description" content="子どもたち一人ひとりの個性を大切に。自然と宇宙への好奇心を育む、あたたかな保育園です。">
+        <meta name="twitter:image" content="https://example.com/ogp.jpg">
+        <!-- robots設定：検索エンジンで公開するかどうか -->
+        <meta name="robots" content="index, follow"> <!-- ※開発中なら noindex, nofollow に切り替える -->
+        <!-- canonical：重複ページ対策（SEO） -->
+        <link rel="canonical" href="https://example.com/">
+      </head>
 <body>
-    
+    <header class="l-header">
+        <div class="l-header__inner">
+            <a class="l-header__brand" href="./">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/common/logo-sp.svg">
+                    <img class="l-header__logo" src="./images/common/logo-pc.svg" alt="ほしぞら保育園">
+                </picture>
+            </a>
+
+            <nav class="l-header__nav" aria-label="グローバルナビゲーション">
+                <ul class="l-header__list">
+                    <li class="l-header__item"><a class="l-header__link js-scroll" href="#philosophy">理念・方針</a></li>
+                    <li class="l-header__item l-header__item--wrap"><a class="l-header__link js-scroll" href="#life">園での生活</a></li>
+                    <li class="l-header__item l-header__item--wrap"><a class="l-header__link js-scroll" href="#qa">よくあるQ&amp;A</a></li>
+                    <li class="l-header__item"><a class="l-header__link js-scroll" href="#news">お知らせ</a></li>
+                    <li class="l-header__item"><a class="l-header__link js-scroll" href="#access">アクセス</a></li>
+                </ul>
+            </nav>
+
+            <div class="l-header__cta">
+                <a class="c-button c-button--primary js-scroll" href="#contact">お問い合わせ</a>
+            </div>
+
+            <button class="l-header__toggle" type="button" aria-controls="drawer" aria-expanded="false">
+                <span class="u-visuallyHidden">メニューを開く</span>
+                <span class="l-header__toggleBars"><span></span></span>
+            </button>
+        </div>
+
+        <div class="l-header__drawerOverlay" data-drawer-overlay></div>
+        <aside class="l-header__drawer" id="drawer" aria-label="メニュー" aria-hidden="true">
+            <div class="l-header__drawerHeader">
+                <strong>メニュー</strong>
+                <button class="l-header__drawerClose" type="button" data-drawer-close aria-label="閉じる">×</button>
+            </div>
+            <nav class="l-header__drawerNav" aria-label="ドロワーナビゲーション">
+                <ul>
+                    <li><a class="js-scroll" href="#philosophy">理念・方針</a></li>
+                    <li><a class="js-scroll" href="#life">園での生活</a></li>
+                    <li><a class="js-scroll" href="#qa">よくあるQ&amp;A</a></li>
+                    <li><a class="js-scroll" href="#news">お知らせ</a></li>
+                    <li><a class="js-scroll" href="#access">アクセス</a></li>
+                </ul>
+            </nav>
+            <div class="l-header__drawerCta">
+                <a class="c-button c-button--primary js-scroll" href="#contact">お問い合わせ</a>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <section id="philosophy" class="p-section">
+            <div class="p-section__inner">
+                <h2 class="p-section__title">園の理念・方針</h2>
+            </div>
+        </section>
+        <section id="life" class="p-section">
+            <div class="p-section__inner">
+                <h2 class="p-section__title">園での生活・保育内容</h2>
+            </div>
+        </section>
+        <section id="qa" class="p-section">
+            <div class="p-section__inner">
+                <h2 class="p-section__title">入園・生活に関するQ&amp;A</h2>
+            </div>
+        </section>
+        <section id="news" class="p-section">
+            <div class="p-section__inner">
+                <h2 class="p-section__title">園からのお知らせ</h2>
+            </div>
+        </section>
+        <section id="access" class="p-section">
+            <div class="p-section__inner">
+                <h2 class="p-section__title">アクセス・概要</h2>
+            </div>
+        </section>
+        <section id="contact" class="p-section p-section--sub">
+            <div class="p-section__inner">
+                <h2 class="p-section__title">お問い合わせ・資料請求</h2>
+            </div>
+        </section>
+    </main>
 </body>
-</html>
+</html> 
